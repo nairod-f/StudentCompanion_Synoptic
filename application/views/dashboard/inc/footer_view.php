@@ -1,3 +1,7 @@
+</div>
+<!-- start wrapper-->
+
+
         <footer>
         </footer>
 
