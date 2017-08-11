@@ -32,7 +32,8 @@ class User extends CI_Controller
 
     public function delete()
     {
-        $result = $this->user_model->delete(4);
+        $result = $this->user_model->delete(40);
+        print_r($result);
     }
 
 }
