@@ -6,11 +6,11 @@
 
         <title>MyApp</title>
 
-            <link type="text/css" rel="stylesheet" href="<?=base_url('public/css/bootstrap.min.css'); ?>">
-            <link type="text/css" rel="stylesheet" href="<?=base_url('public/css/style.css'); ?>">
-
-            <link type="text/javascript" href="<?=base_url('public/js/jquery.js'); ?>">
-            <link type="text/javascript" href="<?=base_url('public/js/bootstrap.js'); ?>">
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/style.css">
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
+            
+            <link type="text/javascript" href="<?php echo base_url(); ?>public/js/jquery.js">
+            <link type="text/javascript" href="<?php echo base_url(); ?>public/js/bootstrap.js">
 
 
     </head>

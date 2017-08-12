@@ -8,6 +8,16 @@ class User extends CI_Controller
         $this->load->model('user_model');
     }
 
+    public function login(){
+        $this->session->set_userdata([
+            'user_id' => 1
+        ]);
+
+        $session = $this->session->all_userdata('user_id');
+        print_r($session);
+    }
+
+
     public function get()
     {
         $data = $this->user_model->get(1);
