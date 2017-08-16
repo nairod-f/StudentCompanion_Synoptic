@@ -1,4 +1,6 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 class User_model extends CI_Model
 {
     /**
@@ -6,10 +8,12 @@ class User_model extends CI_Model
     *  Single record -  $this->user_model->get(2);
     *  All records   -  $this->user_model->get();
     */
-    public function test_get($user_id = null)
+    public function get($user_id = null)
     {
         if($user_id === null) {
-            $q =  $this->db->get('user_id');
+            $q =  $this->db->get('tbl_users');
+        } elseif(is_array($user_id)) {
+            $q = $this->db->get_where('tbl_users', $user_id);
         } else {
             $q = $this->db->get_where('tbl_users', ['user_id' => $user_id]);
         }
