@@ -9,15 +9,21 @@ class Home extends CI_Controller
             $this->load->view('home/inc/footer_view');
         }
 
-        public function test()
+        public function register()
         {
+            $this->load->view('home/inc/header_view');
+            $this->load->view('home/register_view');
+            $this->load->view('home/inc/footer_view');
+        }
+        // public function test()
+        // {
 
 //you pass the parameters through the thing or else from the top of it
 //you can also do: "order by" || DESC = decendant
-            $this->db->order_by('user_id DESC');
-            //$this->db->where(['user_id' => 2]);
-            $q = $this->db->get('tbl_users');
-            print_r($q->result());
+            // $this->db->order_by('user_id DESC');
+            // //$this->db->where(['user_id' => 2]);
+            // $q = $this->db->get('tbl_users');
+            // print_r($q->result());
 //you pass the parameters through the thing or else from the top of it
             // $q = $this->db->get_where('tbl_users', ['user_id' => 1]);
             // //you can do either a string '' or an array []
@@ -43,6 +49,6 @@ class Home extends CI_Controller
 //             $this->db->delete('tbl_users');
 
 
-        }
+        // }
 
 }

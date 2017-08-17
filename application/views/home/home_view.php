@@ -5,14 +5,14 @@
             <div class="control-group">
                 <label class="control-label">Login</label>
                 <div class="controls">
-                    <input type="text" name="login" class="input-xlarge" />
+                    <input type="text" name="user_name" class="input-xlarge" />
                 </div>
             </div>
 
             <div class="control-group">
                 <label class="control-label">Password</label>
                 <div class="controls">
-                    <input type="password" name="password" class="input-xlarge"/>
+                    <input type="password" name="user_password" class="input-xlarge"/>
                 </div>
             </div>
 
@@ -22,6 +22,9 @@
                 </div>
             </div>
         </form>
+
+        <a href="<?=site_url('home/register')?>">Register</a>
+
     </div>
 </div>
 
