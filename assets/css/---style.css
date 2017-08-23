@@ -1,0 +1,16 @@
+/* Override bootstrap */
+.wrapper{
+    width: 980px;
+    margin: 0 auto;
+}
+
+#dashboard-side {
+    background: #808080;
+    min-height: 500px;
+
+}
+
+#dashboard-main {
+    background: #808080;
+    min-height: 500px;
+}

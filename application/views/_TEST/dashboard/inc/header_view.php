@@ -12,6 +12,8 @@
             <link type="text/javascript" href="<?=base_url('public/js/jquery.js'); ?>">
             <link type="text/javascript" href="<?=base_url('public/js/bootstrap.js'); ?>">
 
+            <link rel="shortcut icon" href="#" />
+
 
     </head>
     <body>

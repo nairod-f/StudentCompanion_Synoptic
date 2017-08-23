@@ -1,3 +1,14 @@
+
+<?php
+echo ini_get('display_errors');
+
+if (!ini_get('display_errors')) {
+    ini_set('display_errors', '1');
+}
+
+echo ini_get('display_errors');
+?>
+
 <div class="row">
     <div class="span6">
         <form id="login_form" class="form-horizontal" method="post" action="<?=site_url('user/login')?>">
@@ -38,7 +49,7 @@
 
             $.post(url, postData, function(o) {
                 if(o.result == 1){
-                    window.location.href = '<?site_url('dashboard')?>';
+                    window.location.href = '<?site_url('dashboard_view')?>';
                     alert('good login');
                 } else {
                     alert('Invalid Login');

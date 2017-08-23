@@ -12,6 +12,8 @@
             <script src='assets/js/jquery-3.2.1.min.js'></script>
             <script src='assets/js/bootstrap.js'></script>
 
+            <link rel="shortcut icon" href="#" />
+
     </head>
     <body>
 
